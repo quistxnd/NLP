@@ -22,7 +22,7 @@ for i in dist:
         count += 1
         word = e.group(1)
         sim = i[1]
-        marker = " <--- ЗАДАННОЕ СЛОВО" if word in ("лента", "муравей") else ""
-        print(f"{count:2d}. {word} (косинусное сходство: {sim:.4f}){marker}")
+        marker = " - ЗАДАННОЕ СЛОВО" if word in ("лента", "муравей") else ""
+        print(f"{count:2d}. {word} (сходство: {sim:.4f}){marker}")
         if count == 10:
             break
